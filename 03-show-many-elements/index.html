@@ -1,13 +1,12 @@
 <!doctype html>
 <html>
 <head>
-  <meta charset="utf-8" />
   <title>DOM Atomic 02</title>
-  <script type="text/javascript" src="./global.js"></script>
+  <script type="text/javascript" src="global.js"></script>
 </head>
 <body>
 
-  <div class="show_me">
+  <div class="show_me" style="display: none;">
     I have the class "show_me", and will stick around even after you click the button at the bottom.
   </div>
 
@@ -15,10 +14,10 @@
     I have the class "hide_me"; I should disappear when you click the button at the bottom.
   </div>
 
-  <div class="hide_me">
-    I'm also part of the "hide_me" class, and should also disappear.
+  <div class="show_me" style="display: none;">
+    I'm also part of the "show_me" class, and should also appear.
   </div>
 
-  <button id="button">Hide</button>
+  <button id="button">Show</button>
 </body>
 </html>
